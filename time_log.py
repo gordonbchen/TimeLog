@@ -22,7 +22,7 @@ def add_entry(args: Namespace) -> None:
 
 def create_time_log(csv_file: Path) -> None:
     """Create a csv file for the time log."""
-    col_names = ["date", "desc", "mins", "total_mins"]
+    col_names = ["date", "desc", "mins"]
 
     with open(csv_file, mode="w", newline="") as f:
         writer = csv.writer(f)
